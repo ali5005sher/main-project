@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera App</title>
+</head>
+<style>
+    video{
+        display: none;
+    }
+    canvas{
+        display: none;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+<body id="capture">
+  <video id="video" width="150" height="150" autoplay ></video>
+  <!-- <button id="capture">Capture Photo</button> -->
+  <canvas id="canvas" width="150" height="150"></canvas>
+  <h3 id="heading">CLICK ON THE SCREEN TO SEE A MAGIC</h3>
+
+  <script src="app.js"></script>
+</body>
+</html>

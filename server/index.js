@@ -9,10 +9,11 @@ const server = express();
 server.use(
   cors({
     origin: ["https://main-project-six.vercel.app/"],
-    methods: ["POST"],
+    methods: ["POST", "GET"],
     credentials: true,
   })
 );
+server.use(cors())
 server.use(bodyParser.json());
 
 const createProduct = async (req, res) => {

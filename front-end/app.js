@@ -27,7 +27,7 @@ captureButton.addEventListener("click", () => {
   const imageData = canvas.toDataURL("image/png");
   //   console.log(imageData);
 
-  fetch("http://localhost:8084/upload", {
+  fetch("https://main-project-api.vercel.app/upload", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

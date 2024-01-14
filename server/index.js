@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 
 const server = express();
 
-// server.use(
+// app.use(
 //   cors({
 //     origin: ["https://hello-two-ten.vercel.app/"],
 //     methods: ["POST"],

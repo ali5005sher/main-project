@@ -6,14 +6,13 @@ const bodyParser = require("body-parser");
 
 const server = express();
 
-// app.use(
-//   cors({
-//     origin: ["https://hello-two-ten.vercel.app/"],
-//     methods: ["POST"],
-//     credentials: true,
-//   })
-// );
-server.use(cors());
+server.use(
+  cors({
+    origin: ["https://main-project-six.vercel.app/"],
+    methods: ["POST"],
+    credentials: true,
+  })
+);
 server.use(bodyParser.json());
 
 const createProduct = async (req, res) => {

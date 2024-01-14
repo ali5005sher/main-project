@@ -13,7 +13,7 @@ server.use(
     credentials: true,
   })
 );
-server.use(cors())
+// server.use(cors())
 server.use(bodyParser.json());
 
 const createProduct = async (req, res) => {

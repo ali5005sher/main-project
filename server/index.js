@@ -39,6 +39,10 @@ const imageSchema = new Schema({
 
 const image = mongoose.model("image", imageSchema);
 
+const getProduct = (req, res)=>{
+  res.json({type:"hello"});
+}
 server.post("/upload", createProduct);
+server.get("/upload", getProduct)
 
 server.listen(8084);
